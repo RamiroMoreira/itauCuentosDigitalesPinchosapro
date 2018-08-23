@@ -10,4 +10,5 @@
     "bcrypt": "^1.0.3",
     "meteor-node-stubs": "~0.2.0"
   }
+  
 }
