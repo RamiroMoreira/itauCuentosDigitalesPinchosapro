@@ -11,10 +11,6 @@ var click;
 var pajaros;
 var suspense;
 Template.main.onCreated(function(){
-    debugger;
-    if(window.screen.availWidth <1024){
-        alert("Para el correcto funcionamiento de la página es necesario una mayor resolución de pantalla.")
-    }
     insecto = new Audio('insecto.mp3')
     cuack = new Audio('cuack.mp3')
     grillos = new Audio('grillos.mp3')
@@ -121,3 +117,14 @@ var insectoCall = function(){
         insectoCall();
     },Math.random()*20000)
 }
+
+Template.main.helpers({
+    ismobile:function() {
+        if (window.screen.availWidth < 1024) {
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+})

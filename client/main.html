@@ -6,7 +6,13 @@
 </head>
 
 <body style="background-attachment: fixed;padding:0px;margin:0px;background-color: rgb(34, 38, 39)">
-  {{> main}}
+  {{#if ismobile}}
+      <span class="textoBlanco">
+        "Para el correcto funcionamiento de la página es necesario una mayor resolución de pantalla."
+      </span>
+  {{else}}
+    {{> main}}
+  {{/if}}
   <script type="text/javascript" src="skrollr.min.js"></script>
   <script type="text/javascript">
       var s = skrollr.init();
