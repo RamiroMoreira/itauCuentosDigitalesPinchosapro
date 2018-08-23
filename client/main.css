@@ -1,0 +1,499 @@
+body {
+  padding: 10px;
+  font-family: 'Montserrat';
+}
+
+
+.textoNegro {
+  color:black;
+  width:700px;
+  margin-left:162px;
+  position:fixed;
+  text-align:center;
+  font-family:'Montserrat';
+  font-weight:bold;
+  font-size:20px;
+}
+
+.textoBlanco {
+  color:white;
+  width:700px;
+  margin-left:162px;
+  position:fixed;
+  text-align:center;
+  font-family:'Montserrat';
+  font-weight:bold;
+  font-size:20px;
+
+}
+@-webkit-keyframes myOrbit-small {
+  from { -webkit-transform: rotate(0deg) translateX(5px) rotate(0deg); }
+  to   { -webkit-transform: rotate(360deg) translateX(5px) rotate(-360deg); }
+}
+
+@-moz-keyframes myOrbit-small {
+  from { -moz-transform: rotate(0deg) translateX(5px) rotate(0deg); }
+  to   { -moz-transform: rotate(360deg) translateX(5px) rotate(-360deg); }
+}
+
+@-o-keyframes myOrbit-small {
+  from { -o-transform: rotate(0deg) translateX(5px) rotate(0deg); }
+  to   { -o-transform: rotate(360deg) translateX(5px) rotate(-360deg); }
+}
+
+@keyframes myOrbit-small {
+  from { transform: rotate(0deg) translateX(5px) rotate(0deg); }
+  to   { transform: rotate(360deg) translateX(5px) rotate(-360deg); }
+}
+
+.rotation-very-slow {
+  -webkit-animation: myOrbit-small 5s linear infinite; /* Chrome, Safari 5 */
+  -moz-animation: myOrbit-small 5s linear infinite; /* Firefox 5-15 */
+  -o-animation: myOrbit-small 5s linear infinite; /* Opera 12+ */
+  animation: myOrbit-small 5s linear infinite;
+}
+
+/* escena 1*/
+.e1background {
+  position:fixed;top:0px;width:1024px;height:100%;background-repeat: no-repeat;background-image: url('e1background.png');
+}
+
+.e1headphones {
+  position:fixed;
+  width:1024px;
+  text-align:center;
+  font-family:'Montserrat';
+  font-weight:bold;
+  color:white;
+  font-size:16px;
+}
+.e1elagua {
+  position:fixed;width:1024px;height:100%;background-image: url('e1agua.png');
+}
+
+.e1canoa {
+  position:fixed;width:705px;height:100%;margin-left:200px;background-repeat: no-repeat;
+  background-size: auto;background-image: url('e1canoa.png');
+}
+
+.e1reflejo {
+  position:fixed;width:1024px;height:100%;background-image: url('e1reflejo.png');background-repeat: no-repeat;
+}
+
+.e1sombrabote {
+  position:fixed;width:641px;height:321px;left:300px;background-repeat: no-repeat;
+  background-size: auto;background-image: url('e1sombrabote.png');
+}
+.e1top {
+  position: absolute;
+  top: 450px;
+  width: 1024px;
+  height: 100%;
+  background-image: url('e1top.png');
+}
+
+.e1titulo {
+  position: fixed;
+  top: 20px;
+  width:1024px;
+  text-align:center;
+  height: 100%;
+  font-family: 'Knewave';
+  font-size:60px !important;
+  color:white;
+  font-weight:normal !important;
+}
+
+.e1tierraAlavista {
+  position: fixed;
+  top:400px;
+  margin-left:100px;
+  height:100px;
+  padding:10px;
+  width:200px;
+  font-family:'Montserrat';
+  font-weight:bold;
+  font-size:20px;
+  background-image: url('globoRight.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.e1bajarYver {
+  position: fixed;
+  top:250px;
+  margin-left:700px;
+  height:100px;
+  padding:20px;
+  font-family:'Montserrat';
+  width:250px;
+  font-weight:bold;
+  font-size:20px;
+  background-image: url('globoLeft.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+}
+
+.e1arena{
+  position: fixed;
+  width: 1024px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-image: url('e1arena.png');
+}
+
+.e1vegetacion{
+  position: fixed;
+  width: 1024px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-image: url('e1vegetacion.png');
+}
+/*transicion 1*/
+
+
+/* escena 2*/
+
+.e2arboles {
+  position: fixed;
+  width: 1024px;
+  height: 735px;
+  background-image: url('e2arboles.png');
+}
+
+.e2cartel {
+  position: relative;
+  top: 900px;
+  width: 468px;
+  height: 172px;
+  margin:auto;
+  background-repeat: no-repeat;
+  background-image: url('e2cartel.png');
+}
+
+.e2ninos {
+  position: fixed;
+  margin:auto;
+  width: 610px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-image: url('e2ninos.png');
+}
+
+.e2matilda{
+  position: fixed;
+  width: 490px;
+  height: 100%;
+  margin-left:0px;
+  background-repeat: no-repeat;
+  background-image: url('e2matilda.png');
+}
+
+.e2linterna{
+  position: fixed;
+  width: 649px;
+  height: 100%;
+  margin-left:0px;
+  background-repeat: no-repeat;
+  background-image: url('e2linterna.png');
+}
+
+.e2linterna2{
+  position: fixed;
+  width: 649px;
+  height: 100%;
+  opacity:0.7;
+  margin-left:0px;
+  background-repeat: no-repeat;
+  background-image: url('e2linterna2.png');
+}
+
+.e2linternaText {
+  position: fixed;
+  margin-left:700px;
+  height:200px;
+  width:300px;
+  padding:20px;
+  font-family:'Montserrat';
+  font-weight:bold;
+  font-size:20px;
+  background-image: url('globoLeft.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+}
+
+.e2linternaText2 {
+  position: fixed;
+  margin-left:350px;
+  height:100px;
+  width:230px;
+  padding:20px;
+  font-family:'Montserrat';
+  font-weight:bold;
+  font-size:20px;
+  background-image: url('globoLeft.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.e2noVamosA {
+  position: fixed;
+  top:250px;
+  margin-left:150px;
+  height:150px;
+  width:200px;
+  padding:20px;
+  font-family:'Montserrat';
+  font-weight:bold;
+  font-size:20px;
+  background-image: url('globoLeft.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.e2entroSi {
+  position: fixed;
+  top:150px;
+  margin-left:750px;
+  height:100px;
+  width:200px;
+  padding:10px;
+  font-family:'Montserrat';
+  font-weight:bold;
+  font-size:20px;
+  background-image: url('globoLeft.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+}
+
+.e2vosPrimero {
+  position: fixed;
+  top:150px;
+  margin-left:500px;
+  height:50px;
+  width:150px;
+  padding:10px;
+  font-family:'Montserrat';
+  font-weight:bold;
+  font-size:20px;
+  background-image: url('globoRight.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.e2divertido {
+  position: fixed;
+  margin-left:500px;
+  text-align: left;
+  color:white;
+  font-family:'Montserrat';
+  font-weight:bold;
+  font-size:20px;
+}
+
+/* escena 3*/
+
+.e3background2 {
+  position:fixed;width:1024px;height:100%;background-repeat: no-repeat;background-image: url('e3background2.png');
+}
+.e3lineadeplantas {
+  position:fixed;width:1024px;height:100%;background-repeat: no-repeat;background-image: url('lineadeplantas.png');
+}
+
+.e3gliptodonte {
+  position:fixed;width:1024px;height:100%;background-repeat: no-repeat;background-image: url('e3gliptodonte.png');
+}
+
+.e3vegetacion {
+  position:fixed;width:1024px;height:100%;background-repeat: no-repeat;background-image: url('e3vegetacionadelante.png');
+}
+
+.e3felipe {
+  position:fixed;background-size:75%;width:368px;height:100%;background-repeat: no-repeat;background-image: url('e3felipe.png');
+}
+.e3matilda {
+  position:fixed;margin-left:700px;background-size:75%;width:368px;height:100%;background-repeat: no-repeat;background-image: url('e3matilda.png');
+}
+
+.e3quees{
+  position: fixed;
+  margin-left:50px;
+  padding:20px;
+  width:100px;
+  height:50px;
+  font-family:'Montserrat';
+  font-weight:bold;
+  font-size:20px;
+  background-image: url('globoRight.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.e3felipetext {
+  position: fixed;
+  margin-left:300px;
+  max-width:724px;
+  text-align: left;
+  color:white;
+  font-family:'Montserrat';
+  font-weight:bold;
+  font-size:20px;
+}
+
+.e3matildatext {
+  position: fixed;
+  margin-left:20px;
+  max-width:700px;
+  text-align: left;
+  color:white;
+  font-family:'Montserrat';
+  font-weight:bold;
+  font-size:20px;
+}
+
+/* episiodio 4 */
+
+.e4bosque {
+  position:fixed;margin-left:60px;width:898px;height:100%;background-repeat: no-repeat;background-image: url('e4boque.png');
+}
+
+.e4juan {
+  position:fixed;margin-left:640px;width:396px;height:100%;background-repeat: no-repeat;background-image: url('e4juan.png');
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.e4juan2 {
+  position:fixed;width:396px;height:100%;  background-size: 80%;
+  background-repeat: no-repeat;background-image: url('e4juan.png');
+}
+.e4alfonso {
+  position:fixed;margin-left:310px;background-size: 80%;width:491px;height:100%;background-repeat: no-repeat;background-image: url('e4alfonso.png');
+}
+.e4matilde {
+  position:fixed;margin-left:710px;background-size: 80%;width:362px;height:100%;background-repeat: no-repeat;background-image: url('e4matilde.png');
+}
+
+.e5chicosCaminando {
+  position:fixed;
+  margin-left:30px;
+  width:949px;
+  height:100%;
+  background-repeat: no-repeat;
+  background-image: url('e5chicoscaminando.png');
+}
+
+.final {
+  position:fixed;
+  width:3353px;
+  height:768px;
+  background-repeat: no-repeat;
+  background-image: url('final.png');
+}
+
+.e4nopasamos{
+  position: fixed;
+  margin-left:400px;
+  height:50px;
+  height:230px;
+  padding:20px;
+  font-family:'Montserrat';
+  font-weight:bold;
+  font-size:20px;
+  background-image: url('globoRight.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.e4nosperdimos{
+  position: fixed;
+  margin-left:400px;
+  height:100px;
+  width:300px;
+  padding:20px;
+  font-family:'Montserrat';
+  font-weight:bold;
+  font-size:30px;
+  background-image: url('globoLeft.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.e4matildayalfonso {
+  position:fixed;margin-left:10px;width:470px;height:100%;background-repeat: no-repeat;background-image: url('e4matildayalfonso.png');
+}
+
+.e4matildaAnima{
+  color:white;
+  width:524px;
+  margin-left:500px;
+  position:fixed;
+  text-align:center;
+  font-family:'Montserrat';
+  font-weight:bold;
+  font-size:20px;
+}
+
+.e4textoHuellas{
+  color:white;
+  width:524px;
+  position:fixed;
+  text-align:center;
+  font-family:'Montserrat';
+  font-weight:bold;
+  font-size:20px;
+}
+
+.e4textoSerpiente{
+  color:white;
+  width:700px;
+  margin-left:162px;
+  position:fixed;
+  text-align:center;
+  font-family:'Montserrat';
+  font-weight:bold;
+  font-size:20px;
+}
+
+.e4huellas {
+  position:fixed;margin-left:620px;width:388px;height:645px;background-repeat: no-repeat;background-image: url('e4huellas.png');
+}
+
+.e4culebra {
+  position:fixed;margin-left:100px;background-size: 80%;
+  width:1024px;height:100%;background-repeat: no-repeat;background-image: url('e4culebra.png');
+}
+
+.e4paremos{
+  position: fixed;
+  margin-left:200px;
+  height:100px;
+  width:300px;
+  padding:20px;
+  font-family:'Montserrat';
+  font-weight:bold;
+  font-size:20px;
+  background-image: url('globoLeft.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.e4cuidado{
+  position: fixed;
+  margin-left:300px;
+  height:100px;
+  width:300px;
+  padding:20px;
+  font-family:'Montserrat';
+  font-weight:bold;
+  font-size:20px;
+  background-image: url('globoRight.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
