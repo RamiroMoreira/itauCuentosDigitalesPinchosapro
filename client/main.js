@@ -14,7 +14,11 @@ Template.main.onCreated(function(){
     insecto = new Audio('insecto.mp3')
     cuack = new Audio('cuack.mp3')
     grillos = new Audio('grillos.mp3')
-    grillos.volume = 0.5;
+    Meteor.setInterval(function(){
+        insecto.volume = 0.6;
+        cuack.volume = 0.6;
+        grillos.volume = 0.6;
+    },0)
     insectoCall()
     cuackCall()
     grillosCall()
@@ -29,11 +33,14 @@ Template.main.onCreated(function(){
                 pajaros = undefined;
             }
         }
-        else if(window.scrollY >= 200 && window.scrollY < 2600){
+        else if((window.scrollY >= 200 && window.scrollY < 2600)||(window.scrollY >= 13200)){
             if(!rioSuave) {
                 rioSuave = new Audio('rioSuave.mp3');
                 rioSuave.loop = true;
                 rioSuave.play();
+                Meteor.setInterval(function(){
+                    rioSuave.volume = 0.4;
+                },0)
             }
             if(pajaros){
                 pajaros.pause()
