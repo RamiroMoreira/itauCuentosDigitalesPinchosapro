@@ -81,7 +81,7 @@ body {
 }
 
 .e1sombrabote {
-  position:fixed;width:641px;height:321px;left:300px;background-repeat: no-repeat;
+  position:fixed;width:641px;height:321px;margin-left:250px;background-repeat: no-repeat;
   background-size: auto;background-image: url('e1sombrabote.png');
 }
 .e1top {
