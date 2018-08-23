@@ -199,6 +199,16 @@ body {
   background-image: url('e2linterna.png');
 }
 
+.e2linternaFoco{
+  position: fixed;
+  width: 649px;
+  margin-left:100px;
+  height: 100%;
+  margin-left:170px;
+  background-repeat: no-repeat;
+  background-image: url('e2linternaFoco.png');
+}
+
 .e2linterna2{
   position: fixed;
   width: 649px;
