@@ -113,9 +113,9 @@ Template.main.onCreated(function(){
                 pajaros = new Audio('pajaros.mp3');
                 pajaros.loop = true;
                 pajaros.play();
-                // Meteor.setInterval(function(){
-                    pajaros.volume = 0.2;
-                // },0)
+                Meteor.setInterval(function(){
+                    pajaros.volume = 0.15;
+                },0)
 
             }
             if(click) {
@@ -131,18 +131,27 @@ Template.main.onCreated(function(){
 var grillosCall = function(){
     Meteor.setTimeout(function(){
         grillos.play();
+        Meteor.setTimeout(function(){
+            grillos.volume = 0.5;
+        },0)
         grillosCall();
     },Math.random()*20000)
 }
 var cuackCall = function(){
     Meteor.setTimeout(function(){
         cuack.play();
+        Meteor.setTimeout(function(){
+            cuack.volume = 0.6;
+        },0)
         cuackCall();
     },Math.random()*100000)
 }
 var insectoCall = function(){
     Meteor.setTimeout(function(){
         insecto.play();
+        Meteor.setTimeout(function(){
+            insecto.volume = 0.5;
+        },0)
         insectoCall();
     },Math.random()*20000)
 }
