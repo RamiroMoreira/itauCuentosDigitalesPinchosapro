@@ -10,15 +10,14 @@ var grillos;
 var click;
 var pajaros;
 var suspense;
+var pisadas;
 Template.main.onCreated(function(){
     insecto = new Audio('insecto.mp3')
     cuack = new Audio('cuack.mp3')
     grillos = new Audio('grillos.mp3')
-    Meteor.setInterval(function(){
         insecto.volume = 0.6;
         cuack.volume = 0.6;
         grillos.volume = 0.6;
-    },0)
     insectoCall()
     cuackCall()
     grillosCall()
@@ -32,6 +31,7 @@ Template.main.onCreated(function(){
                 pajaros.pause()
                 pajaros = undefined;
             }
+
         }
         else if((window.scrollY >= 200 && window.scrollY < 2600)||(window.scrollY >= 13200)){
             if(!rioSuave) {
@@ -50,6 +50,11 @@ Template.main.onCreated(function(){
                 suspense.pause()
                 suspense = undefined;
             }
+            if(pisadas){
+                pisadas.pause()
+                pisadas = undefined;
+            }
+
         }
         else if(window.scrollY >= 5150 && window.scrollY<= 5300){
             if(!click) {
@@ -75,6 +80,27 @@ Template.main.onCreated(function(){
             if(!suspense) {
                 suspense = new Audio('suspense.mp3');
                 suspense.play();
+                Meteor.setInterval(function(){
+                    suspense.volume = 0.4;
+                },0)
+            }
+            if(pisadas){
+                pisadas.pause()
+                pisadas = undefined;
+            }
+        }
+        else if(window.scrollY >= 9300 && window.scrollY<= 13200){
+            if(!pisadas) {
+                pisadas = new Audio('pisadas.mp3');
+                pisadas.loop = true;
+                pisadas.play();
+                Meteor.setInterval(function(){
+                    pisadas.volume = 0.3;
+                },0)
+            }
+            if(rioSuave){
+                rioSuave.pause()
+                rioSuave = undefined;
             }
         }
         else if(window.scrollY >= 2600){
@@ -87,7 +113,10 @@ Template.main.onCreated(function(){
                 pajaros = new Audio('pajaros.mp3');
                 pajaros.loop = true;
                 pajaros.play();
-                pajaros.volume = 0.3;
+                // Meteor.setInterval(function(){
+                    pajaros.volume = 0.2;
+                // },0)
+
             }
             if(click) {
                 click = undefined;
